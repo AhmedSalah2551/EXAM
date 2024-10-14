@@ -1,0 +1,45 @@
+.row{
+  margin: 50px auto 30px;
+  gap: 20px;
+}
+@media (max-width:767px) {
+  .row{
+    justify-content: center;
+  }
+}
+.subject{
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  width: 32%;
+}
+.subjectBox {
+  width: 200px;
+}
+.namesubject {
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+  margin-bottom: 10px ;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px;
+  &:hover {
+      transform: translateY(-15px);
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+  }
+  div {
+      text-align: center;
+      margin: auto;
+      line-height:3;
+      font-size: 35px;
+      font-weight: 600;
+      color: #FFF;
+      background-color: #7a36f4;
+      border-radius: 10px;
+  }
+}
+.subBtn {
+  text-align: center;
+}

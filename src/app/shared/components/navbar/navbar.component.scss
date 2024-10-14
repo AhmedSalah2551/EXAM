@@ -1,0 +1,105 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .logo{
+    margin-left: 15px;
+  }
+  ul{
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    li{
+      margin-right: 15px;
+      a{
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+          color: #000;
+          transition: all ease-in-out 0.3s;
+        }
+      }
+      .mat-icon{
+        font-size: 30px;
+        margin-top: 7px;
+        overflow: visible;
+      }
+      &.username{
+        user-select: none;
+        background-color: yellowgreen;
+        color: #000;
+        font-weight: bolder;
+        font-size: 20px;
+        padding: 5px 10px;
+      }
+    }
+  }
+  @media (min-width:769px) {
+    button{
+      display: none;
+    }
+  }
+  @media (max-width:768px) {
+    ul{
+      display: none !important;
+    }
+  }
+  .sidenav.open {
+    transform: translateX(-100%);
+    transition: 0.3s all ease-in-out;
+  }
+  .sidenav {
+    width: 200px;
+    height: 100vh;
+    background-color: red;
+    transition:all ease-in-out 0.3s ;
+    left: 0%;
+    top: 0%;
+    position: fixed;
+    padding: 10px;
+    z-index: 999;
+    h1{
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .user{
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: yellowgreen;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bolder;
+      font-size: 20px;
+      text-transform: uppercase;
+   }
+  }
+  .sideElements{
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    a{
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      background-color: #f44336;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      &:hover{
+        background-color: #c58681;
+        transition: all ease-in-out 0.2s;
+      }
+      &.active{
+        background-color: #910340;
+        color: #fff;
+      }
+    }
+    .exit{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 83px;
+    }
+  }

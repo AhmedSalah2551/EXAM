@@ -1,0 +1,266 @@
+{
+  "students": [
+    {
+      "username": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "123",
+      "id": 1,
+      "subjects": [
+        {
+          "name": "math",
+          "id": 1,
+          "degree": 1
+        },
+        {
+          "name": "اللغة العريبة",
+          "id": 4,
+          "degree": 1
+        },
+        {
+          "name": "french",
+          "id": 6,
+          "degree": 1
+        },
+        {
+          "name": "فيزياء",
+          "id": 5,
+          "degree": 1
+        },
+        {
+          "name": "sports",
+          "id": 8,
+          "degree": 1
+        },
+        {
+          "name": "كيمياء",
+          "id": 7,
+          "degree": 0
+        },
+        {
+          "name": "فلسفة",
+          "id": 9,
+          "degree": 4
+        }
+      ]
+    },
+    {
+      "username": "moahmed",
+      "email": "moahmed@gmail.com",
+      "password": "123",
+      "id": 2,
+      "subjects": [
+        {
+          "name": "كيمياء",
+          "id": 7,
+          "degree": 1
+        },
+        {
+          "name": "فلسفة",
+          "id": 9,
+          "degree": 3
+        },
+        {
+          "name": "فيزياء",
+          "id": 5,
+          "degree": 0
+        },
+        {
+          "name": "sports",
+          "id": 8,
+          "degree": 2
+        },
+        {
+          "name": "sports",
+          "id": 8,
+          "degree": 0
+        },
+        {
+          "name": "فلسفة",
+          "id": 9,
+          "degree": 0
+        },
+        {
+          "name": "french",
+          "id": 6,
+          "degree": 1
+        }
+      ]
+    },
+    {
+      "username": "wael",
+      "email": "wael@gmail.com",
+      "password": "123",
+      "id": 3,
+      "subjects": [
+        {
+          "name": "اللغة العريبة",
+          "id": 4,
+          "degree": 1
+        },
+        {
+          "name": "history",
+          "id": 3,
+          "degree": 1
+        },
+        {
+          "name": "science",
+          "id": 3,
+          "degree": 5
+        },
+        {
+          "name": "math",
+          "id": 1,
+          "degree": 1
+        }
+      ]
+    },
+    {
+      "username": "mazen",
+      "email": "mazen@gmail.com",
+      "password": "a@1234",
+      "id": 4,
+      "subjects": [
+        {
+          "name": "math",
+          "id": 1,
+          "degree": 0
+        },
+        {
+          "name": "history",
+          "id": 3,
+          "degree": 1
+        },
+        {
+          "name": "فيزياء",
+          "id": 5,
+          "degree": 0
+        },
+        {
+          "name": "french",
+          "id": 6,
+          "degree": 1
+        },
+        {
+          "name": "كيمياء",
+          "id": 7,
+          "degree": 0
+        }
+      ]
+    },
+    {
+      "username": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "123",
+      "id": 5
+    }
+  ],
+  "doctor": [
+    {
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "12345",
+      "id": 1
+    }
+  ],
+  "subjects": [
+    {
+      "name": "فيزياء",
+      "questions": [
+        {
+          "question": "كم انتهت مباراة برشلونة وبورتو",
+          "answer1": "1-0",
+          "answer2": "1-1",
+          "answer3": "2-0",
+          "answer4": "2-2",
+          "rightAnswer": "1-0"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "french",
+      "questions": [
+        {
+          "question": "من الفائز بجائزة افضل لاغب في عام 2023",
+          "answer1": "ميسي",
+          "answer2": "كريستيانو",
+          "answer3": "نيمار",
+          "answer4": "هالاند",
+          "rightAnswer": "ميسي"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "كيمياء",
+      "questions": [
+        {
+          "question": "الي ماذا يشير عنصر h2o",
+          "answer1": "الهواء",
+          "answer2": "الماء",
+          "answer3": "الغاز",
+          "answer4": "البنزين",
+          "rightAnswer": "الماء"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "sports",
+      "questions": [
+        {
+          "question": "who is the best player",
+          "answer1": "messi",
+          "answer2": "ronaldo",
+          "answer3": "neymar",
+          "answer4": "inesta",
+          "rightAnswer": "messi"
+        },
+        {
+          "question": "who is the winner of fwc 2022",
+          "answer1": "arg",
+          "answer2": "egy",
+          "answer3": "por",
+          "answer4": "ger",
+          "rightAnswer": "arg"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "فلسفة",
+      "questions": [
+        {
+          "question": "ما هي عاصمة مصر",
+          "answer1": "القاهرة",
+          "answer2": "سوهاج",
+          "answer3": "المغرب",
+          "answer4": "الاسكندرية",
+          "rightAnswer": "القاهرة"
+        },
+        {
+          "question": "اين تقع غزة",
+          "answer1": "العراق",
+          "answer2": "الاردن",
+          "answer3": "مصر",
+          "answer4": "فلسطين",
+          "rightAnswer": "فلسطين"
+        },
+        {
+          "question": "اين تقع مكة المكرمة",
+          "answer1": "الجزائر",
+          "answer2": "السعودية",
+          "answer3": "ايران",
+          "answer4": "المغرب",
+          "rightAnswer": "السعودية"
+        }
+      ],
+      "id": 9
+    }
+  ],
+  "login": [
+    {
+      "id": 1
+    }
+  ]
+}

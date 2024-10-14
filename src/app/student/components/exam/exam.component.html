@@ -1,0 +1,43 @@
+<div class="examBox">
+  <div class="examhead text-center"><h2>{{subjects?.name}}</h2></div>
+  <div class="quizBox" *ngFor="let item of subjects?.questions; let index = index">
+    <div class="question d-flex flex-column">
+        <strong ><span class="text-danger mb-3">سؤال ({{index+1}})</span></strong>
+        <strong ><span class="text-danger mb-3">{{item?.question}}</span></strong>
+    </div>
+      <div class="row mt-3" >
+          <div class="col-md-6 col-sm-12">
+              <mat-radio-button color="warn" *ngIf="user?.role=='students' && !showResult && tested"
+              value="{{item?.answer1}}" name="{{index}}" (change)="getAnswer($event)"></mat-radio-button>
+              <label>A. {{item?.answer1}}</label>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+              <mat-radio-button  color="warn" *ngIf="user?.role=='students' && !showResult && tested"
+              value="{{item?.answer2}}" name="{{index}}" (change)="getAnswer($event)"></mat-radio-button>
+              <label>B. {{item?.answer2}}</label>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+              <mat-radio-button color="warn" *ngIf="user?.role=='students' && !showResult && tested"
+              value="{{item?.answer3}}" name="{{index}}" (change)="getAnswer($event)"></mat-radio-button>
+              <label>C. {{item?.answer3}}</label>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+              <mat-radio-button  color="warn" *ngIf="user?.role=='students' && !showResult && tested"
+              value="{{item?.answer4}}" name="{{index}}" (change)="getAnswer($event)"></mat-radio-button>
+              <label>D. {{item?.answer4}}</label>
+          </div>
+      </div>
+      <div class="text-start">
+          <button mat-raised-button  class="btn btn-danger" *ngIf="user?.role=='doctor'" (click)="delete(index)">حذف</button>
+      </div>
+      <hr>
+  </div>
+  <div class="text-center" *ngIf="user?.role=='students'">
+      <span *ngIf="!tested" class="fs-4 text-success">{{degree}}</span>
+      <button *ngIf="!showResult && tested && user?.role == 'students'" class="btn btn-success px-5 fs-5" (click)="getResult()"> النتيجة</button>
+  </div>
+
+</div>
